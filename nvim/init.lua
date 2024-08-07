@@ -9,8 +9,15 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.scrolloff = 20
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<Esc>", function ()
   vim.cmd('nohlsearch')
-  vim.cmd('NvimTreeClose')
+  vim.cmd('Neotree close')
+end)
+vim.api.nvim_create_autocmd({ "VimEnter" }, {
+  callback = function ()
+    vim.cmd('Alpha')
+  end
+})
+vim.keymap.set('n', '<leader>b', function ()
+  vim.cmd('Neotree focus')
 end)
