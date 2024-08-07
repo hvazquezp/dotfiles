@@ -10,3 +10,7 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.scrolloff = 20
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+vim.keymap.set("n", "<Esc>", function ()
+  vim.cmd('nohlsearch')
+  vim.cmd('NvimTreeClose')
+end)
