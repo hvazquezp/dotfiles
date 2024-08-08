@@ -22,5 +22,5 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, {
   end
 })
 vim.keymap.set('n', '<leader>b', function ()
-  vim.cmd('Neotree focus')
+  vim.cmd('Neotree reveal')
 end)
