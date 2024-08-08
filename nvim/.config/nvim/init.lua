@@ -15,7 +15,10 @@ vim.keymap.set("n", "<Esc>", function ()
 end)
 vim.api.nvim_create_autocmd({ "VimEnter" }, {
   callback = function ()
-    vim.cmd('Alpha')
+    if (vim.bo.filetype ~= 'gitcommit')
+    then
+      vim.cmd('Alpha')
+    end
   end
 })
 vim.keymap.set('n', '<leader>b', function ()
