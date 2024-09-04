@@ -8,7 +8,20 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "terraformls", "jdtls", "tsserver", "gopls", "html", "volar","vuels", "cssls", "pylsp" }
+        ensure_installed = {
+          "lua_ls",
+          "terraformls",
+          "jdtls",
+          "tsserver",
+          "gopls",
+          "html",
+          "volar",
+          "vuels",
+          "cssls",
+          "pylsp",
+          "ansiblels",
+          "yamlls",
+        }
       })
     end
   }, {
@@ -30,6 +43,9 @@ return {
             }
           }
         }
+      })
+      lspconfig.yamlls.setup({
+        capabilities = capabilities
       })
       lspconfig.pylsp.setup({
         capabilities = capabilities
