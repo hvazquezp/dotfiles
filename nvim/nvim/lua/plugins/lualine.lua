@@ -15,11 +15,8 @@ return {
           lualine_c = {{
             'buffers'
           }},
+          lualine_x = {},
           lualine_y = {'progress'},
-          lualine_x = {'searchcount',  {
-            'filename',
-            path = 1,
-          } , 'filetype'},
           lualine_z = {'location'}
         }
       })
