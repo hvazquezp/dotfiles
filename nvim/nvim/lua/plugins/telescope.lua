@@ -3,10 +3,24 @@ return {
   dependencies = { 'nvim-lua/plenary.nvim' },
   config = function ()
     require('telescope').setup({
-      defaults = {
-        file_ignore_patterns = {
-          "node_modules/.*",
-          "package%-lock.json",
+      pickers = {
+        live_grep = {
+          file_ignore_patterns = {
+            'node_modules/',
+            '.git/',
+            '.venv'
+          },
+          additional_args = {
+            "--hidden",
+          }
+        },
+        find_files = {
+          file_ignore_patterns = {
+            'node_modules/',
+            '.git/',
+            '.venv'
+          },
+          hidden = true
         }
       }
     })
