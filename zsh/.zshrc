@@ -107,3 +107,4 @@ alias tw='terraform workspace'
 alias sound='~/git/dotfiles/scripts/set-sink.sh'
 alias vpnconnect='openvpn3 session-start -c ~/work/azurehvazquez.ovpn'
 alias vpndisconnect='openvpn3 session-manage -D -c ~/work/azurehvazquez.ovpn'
+export PATH=/Users/hugo.vazquez/Library/Python/3.9/bin:$PATH
