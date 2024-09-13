@@ -9,7 +9,7 @@ vim.api.nvim_set_keymap('n', '<Leader>ff', ':lua require"telescope.builtin".find
 vim.keymap.set('n', '<leader>gb', builtin.git_branches, {})
 vim.keymap.set('n', '<leader>gL', builtin.git_commits, {})
 vim.keymap.set('n', '<leader>gl', builtin.git_bcommits, {})
-vim.keymap.set('n', '<leader>gs', builtin.git_status, {})
+vim.keymap.set('n', '<leader>gs', ':G<CR>', {})
 vim.keymap.set('n', '<leader>gf', builtin.git_files, {})
 
 vim.keymap.set("n", "<C-l>", function ()
