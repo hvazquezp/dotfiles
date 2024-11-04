@@ -108,3 +108,7 @@ alias sound='~/git/dotfiles/scripts/set-sink.sh'
 alias vpnconnect='openvpn3 session-start -c ~/work/azurehvazquez.ovpn'
 alias vpndisconnect='openvpn3 session-manage -D -c ~/work/azurehvazquez.ovpn'
 export PATH=/Users/hugo.vazquez/Library/Python/3.9/bin:$PATH
+export PATH=/Users/hugo.vazquez/tools/terraform:$PATH
+
+# add Pulumi to the PATH
+export PATH=$PATH:/Users/hugo.vazquez/.pulumi/bin
