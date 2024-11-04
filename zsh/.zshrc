@@ -116,3 +116,4 @@ export PATH=$PATH:/Users/hugo.vazquez/.pulumi/bin
 # add Pulumi to the PATH
 export PATH=$PATH:/home/hvazquez/.pulumi/bin
 export PATH=$PATH:/home/hvazquez/tools/go/bin
+export PATH=$PATH:/home/hugo.vazquez/tools/go/bin
